@@ -4,7 +4,10 @@
 set -euo pipefail
 
 PUBLISHER_JAR="publisher.jar"
-PUBLISHER_OPTS="-ig ig.ini"
+# -no-sushi: SUSHI is already run as a separate CI/build step (npx sushi .),
+# so skip the IG Publisher's own SUSHI invocation. It shells out to a global
+# "sushi" binary, which isn't on PATH in this repo's Node/npm setup.
+PUBLISHER_OPTS="-ig ig.ini -no-sushi"
 
 if [ ! -f "$PUBLISHER_JAR" ]; then
   echo "publisher.jar not found. Running _updatePublisher.sh first..."
