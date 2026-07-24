@@ -1,0 +1,60 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ie-identifier-type",
+  "url": "https://hl7-ie.github.io/tooling/fhir/CodeSystem/ie-identifier-type",
+  "version": "0.1.0",
+  "name": "IEIdentifierType",
+  "title": "IE Identifier Type Code System",
+  "status": "draft",
+  "experimental": true,
+  "date": "2024-01-01",
+  "publisher": "HL7 Ireland",
+  "contact": [
+    {
+      "name": "HL7 Ireland",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://hl7-ie.github.io"
+        }
+      ]
+    }
+  ],
+  "description": "Codes representing Irish national identifier types used in HL7 Ireland FHIR implementations.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "IE",
+          "display": "Ireland"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "valueSet": "https://hl7-ie.github.io/tooling/fhir/ValueSet/ie-identifier-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "PPSN",
+      "display": "Personal Public Service Number",
+      "definition": "The Irish Personal Public Service Number (PPSN), a unique reference number assigned to each Irish citizen and resident."
+    },
+    {
+      "code": "GMS",
+      "display": "GMS Number",
+      "definition": "General Medical Services (GMS) scheme patient number."
+    },
+    {
+      "code": "IEHR",
+      "display": "Individual Electronic Health Record Identifier",
+      "definition": "The unique identifier assigned to an individual's Electronic Health Record in Ireland."
+    },
+    {
+      "code": "CHI",
+      "display": "Child Health Identifier",
+      "definition": "The Child Health Identifier assigned to children in Ireland."
+    }
+  ]
+}

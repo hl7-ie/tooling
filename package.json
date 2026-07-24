@@ -1,0 +1,20 @@
+{
+  "name": "hl7-ie-tooling",
+  "version": "0.1.0",
+  "description": "HL7 Ireland Tooling – FHIR IG developer utilities, CI/CD helpers, and validator scripts",
+  "license": "Apache-2.0",
+  "scripts": {
+    "sushi": "sushi .",
+    "build": "bash _genonce.sh",
+    "update-publisher": "bash _updatePublisher.sh",
+    "validate": "bash scripts/validate-all.sh",
+    "scaffold": "bash scripts/scaffold-ig.sh"
+  },
+  "devDependencies": {
+    "fsh-sushi": "^3.13.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

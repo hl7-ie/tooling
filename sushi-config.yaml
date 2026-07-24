@@ -1,0 +1,43 @@
+id: hl7-ie.tooling
+canonical: https://hl7-ie.github.io/tooling/fhir
+name: HL7IrelandTooling
+title: "HL7 Ireland – Tooling Implementation Guide"
+description: >
+  Shared developer tooling, CI/CD pipelines, IG Publisher configurations,
+  validator bundles, and utility artifacts for the HL7 Ireland FHIR ecosystem.
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2024+
+releaseLabel: ci-build
+license: Apache-2.0
+publisher:
+  name: HL7 Ireland
+  url: https://hl7-ie.github.io
+  email: fhir@hl7.ie
+
+dependencies:
+  hl7.fhir.r4.core: 4.0.1
+  hl7.terminology.r4: 5.5.0
+
+pages:
+  index.md:
+    title: Home
+  developer-guide.md:
+    title: Developer Guide
+  ci-cd.md:
+    title: CI / CD
+
+menu:
+  Home: index.html
+  Developer Guide: developer-guide.html
+  CI/CD: ci-cd.html
+  Artifacts: artifacts.html
+
+parameters:
+  show-inherited-invariants: false
+  apply-publisher: true
+  apply-version: true
+  apply-status: true
+  apply-copyright: true
+  path-history: https://hl7-ie.github.io/tooling/fhir/history.html

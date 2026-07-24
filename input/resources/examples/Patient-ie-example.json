@@ -1,0 +1,56 @@
+{
+  "resourceType": "Patient",
+  "id": "ie-patient-example",
+  "meta": {
+    "profile": [
+      "https://hl7-ie.github.io/tooling/fhir/StructureDefinition/ie-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Synthetic patient – Aoife Ní Mhurchadha</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://hl7-ie.github.io/tooling/fhir/identifier/ppsn",
+      "value": "1234567TW"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Ní Mhurchadha",
+      "given": ["Aoife"]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+353 1 555 0100",
+      "use": "home"
+    },
+    {
+      "system": "email",
+      "value": "aoife.nimhurchadha@example.ie"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1985-03-15",
+  "address": [
+    {
+      "use": "home",
+      "line": ["12 Baile Átha Cliath Street"],
+      "city": "Dublin",
+      "postalCode": "D01 AB12",
+      "country": "IE"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "reference": "Practitioner/gp-example",
+      "display": "Dr. Seán Ó Briain"
+    }
+  ]
+}

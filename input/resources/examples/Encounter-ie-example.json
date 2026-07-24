@@ -1,0 +1,67 @@
+{
+  "resourceType": "Encounter",
+  "id": "ie-encounter-example",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Synthetic GP encounter – Aoife Ní Mhurchadha</p></div>"
+  },
+  "status": "finished",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "AMB",
+    "display": "ambulatory"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "11429006",
+          "display": "Consultation"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/ie-patient-example",
+    "display": "Aoife Ní Mhurchadha"
+  },
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "ATND",
+              "display": "attender"
+            }
+          ]
+        }
+      ],
+      "individual": {
+        "reference": "Practitioner/gp-example",
+        "display": "Dr. Seán Ó Briain"
+      }
+    }
+  ],
+  "period": {
+    "start": "2024-04-10T09:00:00+01:00",
+    "end": "2024-04-10T09:20:00+01:00"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "386661006",
+          "display": "Fever"
+        }
+      ]
+    }
+  ],
+  "serviceProvider": {
+    "reference": "Organization/gp-practice-example",
+    "display": "Baile Átha Cliath GP Practice"
+  }
+}
